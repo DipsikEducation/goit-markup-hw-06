@@ -1036,22 +1036,57 @@ display: block;
     body {
         font-family: "Roboto" sans-serif;
         font-size: normal;
-        width: 320px;
+        
     }
 
-    .container {
-        max-width: 720px;
+  
+
+   .container {
+    max-width: 720px;
         width: auto;
         margin: 0 auto;
-
+    
         padding: 0 15px;
     }
 
     .header {
         padding: 17px 1px;
         width: auto;
-    }
+ }
 
+        .nav-list,
+        .adress-list {
+            display: none;
+}
+
+.logo{
+    font-family: Raleway;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 21px;
+        /* 116.667% */
+        letter-spacing: 0.54px;
+        text-transform: uppercase;
+}
+
+/*Start first section MOBILE*/
+
+
+.title {
+    font-size: 36px;
+    line-height: 1.11111;
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
+}
+
+.solution-business {
+    padding: 72px 0;
+}
+
+.btn-service {
+    margin-bottom: 0;
+}
 
     /*Start-second section MOBILE*/
 
@@ -1124,4 +1159,74 @@ display: block;
         margin-bottom: 73px;
 
     }
+
+    /*START FOUR SECTION MOBILE our team*/
+
+    .portfolio-title{
+        font-family: Roboto;
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 40px;
+            /* 111.111% */
+            letter-spacing: 0.72px;
+            text-transform: capitalize;
+    }
+
+    .portfolio-list{
+        width: 320px;
+    }
+
+    .portfolio-list-item{
+        width: 288px;
+        margin: 0 16px;
+
+        margin-bottom: 48px;
+    }
+
+    /*START FOOTER MOBILE*/
+
+          .footer {
+              padding: 96px 0;
+          }
+    
+          .footer-wrapper {
+              flex-direction: column;
+              justify-content: center;
+              gap: 72px;
+          }
+    
+          .thumb-logo {
+              margin: 0 auto;
+          }
+    
+          .logo-footer {
+              display: block;
+              text-align: center;
+              margin: 0 auto 17px;
+          }
+    
+          .subscribe-menu {
+              margin: 0 auto;
+              text-align: center;
+          }
+    
+          .subscribe-form {
+              display: flex;
+              flex-direction: column;
+          }
+    
+          .social-links {
+              margin: 0 auto;
+          }
+    
+          .social-links-text {
+              display: block;
+              text-align: center;
+          }
+    
+          .subscribe-btn {
+              max-width: 165px;
+              margin: 0 auto;
+          }
 }
