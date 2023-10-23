@@ -33,8 +33,99 @@
         <li class="contact-list-item"><a class="contact-list-item link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
         <li class="contact-list-item"><a class="contact-list-item link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
     </ul>
-  </address>      
-</div>
+  </address>   
+  <!--BURGER MENU-->
+
+  
+  <button class="wrapper-burger-btn" type="button" data-burger-open id="is-open-burger">
+  
+    <svg class="icon-burger-menu" width="24" height="24">
+  
+      <use href="./images/icons.svg#icon-heroicons-solid_menu"></use>
+  
+    </svg>
+  
+  </button>
+  
+  <div class="wrapper-burger-menu is-closed " data-burger>
+  
+    <button class="close-burger-menu" data-burger-close>
+  
+      <svg class="icon-close-black" width="8" height="8">
+  
+        <use href="./images/icons.svg#icon-close-black"></use>
+  
+      </svg>
+  
+    </button> 
+
+    <div class="wrapp-burger-nav">
+
+    <ul class="burger-nav list">
+      <li class="burger-nav-item">
+        <a href="" class="burger-nav-link link ">Studio</a>
+      </li>
+      <li class="burger-nav-item">
+        <a href="" class="burger-nav-link link">Portfolio</a>
+      </li>
+      <li class="burger-nav-item">
+        <a href="" class="burger-nav-link link">Contacts</a>
+      </li>
+    </ul>
+
+    <ul class="addres-burger list">
+      <li class="address-burger-item"><a href="tel:+110001111111" class="addres-burger-link link">+11 (000) 111-11-11</a></li>
+      <li class="address-burger-item"><a href="mailto:info@devstudio.com" class="addres-burger-link link">info@devstudio.com</a></li>
+    </ul>
+
+    <!--Social links-->
+
+    <ul class="burger-social-list list">
+      <li class="social-links-list-item">
+        <a class="social-link link" href="">
+          <svg class="social-link-icon" width="16" height="16">
+            <use href="./images/icons.svg#icon-instagram-2"></use>
+          </svg>
+        </a>
+      </li>
+
+      <li class="social-links-list-item">
+        <a class="social-link link" href="">
+          <svg class="social-link-icon" width="16" height="16">
+            <use href="./images/icons.svg#icon-twitter-1"></use>
+          </svg>
+        </a>
+      </li>
+
+        <li class="social-links-list-item">
+          <a class="social-link link" href="">
+            <svg class="social-link-icon" width="16" height="16">
+              <use href="./images/icons.svg#icon-facebook-1"></use>
+            </svg>
+          </a>
+        </li>
+
+        <li class="social-links-list-item">
+          <a class="social-link link" href="">
+            <svg class="social-link-icon" width="16" height="16">
+              <use href="./images/icons.svg#icon-linkedin-1"></use>
+            </svg>
+          </a>
+        </li>
+    </ul>
+
+</div>  <!--wrapp-burger-nav-->
+
+
+
+
+  </div> <!--wrapper-burger menu-->
+
+
+</div> <!--wrapp-header-->
+
+
+
 
     </header> 
 
@@ -45,7 +136,7 @@
       <section class="first-section background-decorator">
         <div class="container hero-decoration">
         <h1 class="hero">Effective Solutions for Your Business</h1>
-        <button class="order-button" type="button">Order Service</button>
+        <button class="order-button" data-modal-open type="button" id="is-open-modal">Order Service</button>
 </div>
       </section>
       <!--=================================================================================Second section ABOUT Direction==============================================================-->
@@ -437,10 +528,10 @@ Cloud Storage App</p>
 
     <!--=================================================================================MODALKA=========================================================================================================================-->
 
-    <div class="backdrop is-closed "> <!--is-open or is-closed--> 
+    <div class="backdrop is-open" data-modal id="modal-is-open"> <!--is-open or is-closed--> 
     <div class="modalwindow">
     
-      <button class="modal-btn" type="button">
+      <button class="modal-btn" data-modal-close type="button">
       <svg class="close-modal" width="8" height="8">
         <use  href="./images/icons.svg#icon-close-black"></use>
       </svg>
@@ -487,12 +578,13 @@ Cloud Storage App</p>
 
   <div class="chekbox-decoration">
     <input class="chekbox visually-hidden" type="checkbox" id="user-privacy" value="true" name="user-privacy"  >
-    <label class="chekbox-label" for="user-privacy">I accept the terms and conditions of the
+    <label class="chekbox-label" for="user-privacy">
+    
       <span class="custom-chekbox-wrapper">
         <svg class="custom-chekbox" width="10" height="8">
           <use href="./images/icons.svg#icon-chekd"></use>
         </svg>
-      </span>
+      </span>I accept the terms and conditions of the
       <a class="privacy-policy" href="#">Privacy Policy</a>
     </label>
   </div>
@@ -505,6 +597,39 @@ Cloud Storage App</p>
     </form>
     </div>
     </div>
+
+    <!--OPEN MODAL SCRIP-->
+<script>(() => {
+    const refs = {
+      openModalBtn: document.querySelector('[data-modal-open]'),
+      closeModalBtn: document.querySelector('[data-modal-close]'),
+      modal: document.querySelector('[data-modal]'),
+    };
+
+    refs.openModalBtn.addEventListener('click', toggleModal);
+    refs.closeModalBtn.addEventListener('click', toggleModal);
+
+    function toggleModal() {
+      refs.modal.classList.toggle('is-closed');
+    }
+  })();</script>
+
+  <!--Open Burger SCRIPT-->
+
+<script>(() => {
+    const refs = {
+      openModalBtn: document.querySelector('[data-burger-open]'),
+      closeModalBtn: document.querySelector('[data-burger-close]'),
+      modal: document.querySelector('[data-burger]'),
+    };
+
+    refs.openModalBtn.addEventListener('click', toggleModal);
+    refs.closeModalBtn.addEventListener('click', toggleModal);
+
+    function toggleModal() {
+      refs.modal.classList.toggle('is-closed');
+    }
+  })();</script>
 
   </body>
 </html>
