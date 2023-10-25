@@ -1049,6 +1049,22 @@ display: block;
 
 @media (max-width: 768px) {
 
+    @media (min-resolution: 92dpi) {
+            .background-decorator {
+                background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                        rgba(46, 47, 66, 0.7)),
+                    url("../images/mobileimg/hero-mobile.jpg");
+            }
+        }
+
+    @media (min-resolution: 192dpi) {
+            .background-decorator {
+                background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                        rgba(46, 47, 66, 0.7)),
+                    url("../images/hero-mobile-2x.jpg");
+            }
+        }
+
     /* Header Mobile START + container */
 
     body {
@@ -1072,6 +1088,12 @@ display: block;
         width: auto;
  }
 
+  .background-decorator {
+      background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+              rgba(46, 47, 66, 0.7)),
+          url(../images/mobileimg/hero-mobile.jpg);
+  }
+
  
 
         .nav-list,
@@ -1089,6 +1111,8 @@ display: block;
         letter-spacing: 0.54px;
         text-transform: uppercase;
         margin-right: 149px;
+        padding-top: 17.5px;
+        padding-bottom: 17.5px;
 
             
 }
@@ -1210,6 +1234,8 @@ display: block;
 /*Start first section MOBILE*/
 
 
+
+
 .title {
     font-size: 36px;
     line-height: 1.11111;
@@ -1217,8 +1243,16 @@ display: block;
     text-transform: capitalize;
 }
 
-.solution-business {
+.hero {
     padding: 72px 0;
+    
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 40px;
+        /* 111.111% */
+        letter-spacing: 0.72px;
+        text-transform: capitalize;
 }
 
 .btn-service {
@@ -1228,7 +1262,7 @@ display: block;
     /*Start-second section MOBILE*/
 
     .second-section {
-        padding: 96px 0px;
+        padding: 96px 16px;
     }
 
     .about-list {
@@ -1272,6 +1306,10 @@ display: block;
 
     /*Third section start Mobile*/
 
+    .third-section{
+        padding: 96px 28px;
+    }
+
     .team-title {
 
         font-size: 36px;
@@ -1288,19 +1326,19 @@ display: block;
     .team-list {
         display: flex;
         flex-direction: column;
+        align-items: center;
+        gap: 72px;
     }
 
-    .team-list-item {
-        margin: 0 16px;
-
-        margin-bottom: 73px;
-
-    }
 
     /*START FOUR SECTION MOBILE our team*/
 
+    .four-section{
+        padding: 96px 16px;
+    }
+
     .portfolio-title{
-        font-family: Roboto;
+        
             font-size: 36px;
             font-style: normal;
             font-weight: 700;
@@ -1311,20 +1349,19 @@ display: block;
     }
 
     .portfolio-list{
-        width: 320px;
+        align-items: center;
+       gap:48px ;
     }
 
     .portfolio-list-item{
         width: 288px;
-        margin: 0 16px;
-
-        margin-bottom: 48px;
+        
     }
 
     /*START FOOTER MOBILE*/
 
           .footer {
-              padding: 96px 0;
+              padding: 96px 16px;
           }
     
           .footer-wrapper {
@@ -1442,6 +1479,22 @@ display: block;
         
     }
 
+         @media (min-resolution: 92dpi) {
+             .background-decorator {
+                 background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                         rgba(46, 47, 66, 0.7)),
+                     url("../images/tabletimg/hero-bg-tab.jpg");
+             }
+         }
+
+        @media (min-resolution: 192dpi) {
+            .background-decorator {
+                background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                        rgba(46, 47, 66, 0.7)),
+                    url("../images/hero-bg-tab-2x.jpg");
+            }
+        }
+
     .wrapper-burger-menu{
         display: none;
     }
@@ -1449,10 +1502,15 @@ display: block;
     /* Header Tablet   */
 
     .header-decoration {
-        padding: 0;
+        padding:25px 16px;
       
        
     }
+     .background-decorator {
+                    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                            rgba(46, 47, 66, 0.7)),
+                        url(../images/tabletimg/hero-bg-tab.jpg);
+                }
 
     .wrapper-burger-btn {
         display: none;
@@ -1489,9 +1547,34 @@ display: block;
        
     }
 
-    /*FIRST SECTION TABLET*/
+    .nav-list-item{
+    font-family: Roboto;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px;
+        /* 150% */
+        letter-spacing: 0.32px;
+    }
+
+    .contact-list-item{
        
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 14px;
+            /* 116.667% */
+            letter-spacing: 0.48px;
+    }
+
+    /*FIRST SECTION TABLET*/
+ 
+   
     /*SECOND SECTION TABLET*/
+
+    .second-section{
+        padding: 96px 16px;
+    }
 
    
 
@@ -1536,6 +1619,9 @@ display: block;
     }
 
     /*THIRD SECTION TABLET*/
+    .third-section{
+        padding: 96px 16px;
+    }
 
    
 
@@ -1544,11 +1630,21 @@ display: block;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
+
+        gap:72px 24px;
     }
 
     /*Four section Tablet*/
 
+    .four-section{
+        padding: 96px 16px;
+    }
+
     /*FOOTER SECTION TABLET*/
+
+    .footer-container{
+        padding: 96px 16px;
+    }
 
         .footer-wrapper {
             flex-direction: row;

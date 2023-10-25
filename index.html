@@ -201,7 +201,12 @@ problem to walk away with the perfect and creative solution.
 
         <ul class="team-list list">
           <li class="team-list-item">
-            <img class="photo-member" src="./images/MarkGuerrero.jpg" alt="Photo Mark Guerrero" width="264"/>
+            <img 
+            class="photo-member"
+             src="./images/MarkGuerrero.jpg"
+              alt="Photo Mark Guerrero"
+              
+              width="264"/>
             
 <div class="team-member-wrapper">            
             <h3 class="team-member">Mark Guerrero</h3>
@@ -380,7 +385,7 @@ problem to walk away with the perfect and creative solution.
               <li class="portfolio-list-item">
                 <div class="hidden-wrapper">              
                 
-                <img src="./images/bankapp.jpg" alt="bank App" width="360">
+                <img  src="./images/bankapp.jpg" alt="bank App" width="360">
     <p class="cover-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App ·
 Cloud Storage App</p>
 </div>
@@ -528,7 +533,7 @@ Cloud Storage App</p>
 
     <!--=================================================================================MODALKA=========================================================================================================================-->
 
-    <div class="backdrop " data-modal > <!--is-open or is-closed--> 
+    <div class="backdrop is-closed" data-modal > <!--is-open or is-closed--> 
     <div class="modalwindow">
     
       <button class="modal-btn" data-modal-close type="button">
@@ -610,7 +615,7 @@ Cloud Storage App</p>
     refs.closeModalBtn.addEventListener('click', toggleModal);
 
     function toggleModal() {
-      refs.modal.classList.toggle('is-open');
+      refs.modal.classList.toggle('is-closed');
     }
   })();</script>
 
